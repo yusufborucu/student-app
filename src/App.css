@@ -20,3 +20,22 @@
 .App-link {
   color: #09d3ac;
 }
+
+.active-page {
+  color: #fff;
+  background-color: #007bff;
+}
+
+.inlineError {
+  color: #f44336;
+}
+
+.search-input {
+  width: 20%;
+  padding: 10px 10px;
+  margin: 5px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
