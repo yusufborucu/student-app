@@ -6,8 +6,10 @@ import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 
+const baseUrl = document.getElementsByTagName('base')[0].getAttribute('href');
+
 ReactDOM.render(
-    <BrowserRouter>
+    <BrowserRouter basename={baseUrl}>
         <App />
     </BrowserRouter>, 
     document.getElementById('root')

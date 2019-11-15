@@ -29,28 +29,28 @@ class App extends Component {
       <Router>
         <div className="container">
           <nav className="navbar navbar-expand-lg navbar-light bg-light">
-            <Link to={'/'} className="navbar-brand">Student App</Link>
+            <Link to={'/student-app/'} className="navbar-brand">Student App</Link>
             <div className="collapse navbar-collapse" id="navbarSupportedContent">
               <ul className="navbar-nav mr-auto">
                 <li className="nav-item d-flex">
-                  <Link to={'/lessons'} className="nav-link">Dersler</Link>
-                  <Link to={'/classrooms'} className="nav-link">Sınıflar</Link>
-                  <Link to={'/students'} className="nav-link">Öğrenciler</Link>
+                  <Link to={'/student-app/lessons'} className="nav-link">Dersler</Link>
+                  <Link to={'/student-app/classrooms'} className="nav-link">Sınıflar</Link>
+                  <Link to={'/student-app/students'} className="nav-link">Öğrenciler</Link>
                 </li>
               </ul>
             </div>
           </nav>
           <Switch>
-            <Route exact path='/' component={ HomePage } />
-            <Route path='/lessons' component={ LessonsPage } />
-            <Route exact path='/new-lesson' component={ NewLessonPage } />       
-            <Route path='/edit-lesson/:id' component={ EditLessonPage } />
-            <Route path='/classrooms' component={ ClassroomsPage } />
-            <Route exact path='/new-classroom' component={ NewClassroomPage } />       
-            <Route path='/edit-classroom/:id' component={ EditClassroomPage } />
-            <Route path='/students' component={ StudentsPage } />
-            <Route exact path='/new-student' component={ NewStudentPage } />       
-            <Route path='/edit-student/:id' component={ EditStudentPage } />
+            <Route exact path='/student-app/' component={ HomePage } />
+            <Route path='/student-app/lessons' component={ LessonsPage } />
+            <Route exact path='/student-app/new-lesson' component={ NewLessonPage } />       
+            <Route path='/student-app/edit-lesson/:id' component={ EditLessonPage } />
+            <Route path='/student-app/classrooms' component={ ClassroomsPage } />
+            <Route exact path='/student-app/new-classroom' component={ NewClassroomPage } />       
+            <Route path='/student-app/edit-classroom/:id' component={ EditClassroomPage } />
+            <Route path='/student-app/students' component={ StudentsPage } />
+            <Route exact path='/student-app/new-student' component={ NewStudentPage } />       
+            <Route path='/student-app/edit-student/:id' component={ EditStudentPage } />
           </Switch>
           <ToastContainer />
         </div>

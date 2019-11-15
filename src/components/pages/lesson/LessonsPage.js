@@ -118,7 +118,7 @@ export default class LessonsPage extends Component {
                     id={"filter"}
                     placeholder={"Arama"}
                 />
-                <Link to={"/new-lesson"} className="btn btn-success float-right mb-2">Yeni Ders</Link>
+                <Link to={"/student-app/new-lesson"} className="btn btn-success float-right mb-2">Yeni Ders</Link>
                 { 
                     this.state.isLoading 
                     ? 
@@ -149,7 +149,7 @@ export default class LessonsPage extends Component {
                                                     {object.name}
                                                 </td>
                                                 <td>
-                                                    <Link to={"/edit-lesson/" + object.id} className="btn btn-primary">Düzenle</Link>
+                                                    <Link to={"/student-app/edit-lesson/" + object.id} className="btn btn-primary">Düzenle</Link>
                                                 </td>
                                                 <td>
                                                     <button onClick={() => this.delete(object.id)} className="btn btn-danger">Sil</button>

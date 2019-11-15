@@ -1,6 +1,7 @@
 {
   "name": "student-app",
   "version": "0.1.0",
+  "homepage": "http://dukkan.info.tr/student-app/",
   "private": true,
   "dependencies": {
     "axios": "^0.19.0",
